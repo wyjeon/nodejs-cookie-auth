@@ -13,6 +13,8 @@ http
         `Permanent=cookies; Max-Age=${60 * 60 * 24 * 30}`,
         "Secure=Secure; Secure",
         "HttpOnly=HttpOnly; HttpOnly",
+        "Path=Path; Path=/cookie",
+        "Doamin=Domain; Domain=test.o2.org",
       ],
     });
     response.end("Cookie!");
